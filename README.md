@@ -10,5 +10,5 @@
 ### 나. 인터페이스 정리
 ## 3. 객체지향적으로 구현하기
 
-### Reference
-* https://woowabros.github.io/study/2016/07/07/think_object_oriented.html
+## Reference
+### https://woowabros.github.io/study/2016/07/07/think_object_oriented.html
