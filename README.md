@@ -23,9 +23,13 @@
 - 손님과 메뉴판 간 관계: 연관(association) 관계, 각 타입 간 포함되지 않는 상태가 아니고 연관성만 있음. ex) 손님과 바리스타의 관계
 ![uml_type_relationship](./img/uml_type_relationship.PNG)
 ## 2. 객체지향적으로 설계하기
+### 객체지향적 설계의 목표: 협력하는 자율적인 객체들의 공동체 창조
 ### 가. 커피 주문을 위한 협력 설계
+- 객체지향 설계의 첫번째 목표: 훌륭한 협력을 설계하는 것
+
 ### 나. 인터페이스 정리
 ## 3. 객체지향적으로 구현하기
 
 ## Reference
 ### https://woowabros.github.io/study/2016/07/07/think_object_oriented.html
+### 객체지향의 사실과 오해, 조영호
