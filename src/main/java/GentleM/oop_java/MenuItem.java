@@ -14,4 +14,8 @@ public class MenuItem implements IMenuItem {
     public String getName() {
         return name;
     }
+
+    public int getPrice(){
+        return price;
+    }
 }

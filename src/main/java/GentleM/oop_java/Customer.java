@@ -8,7 +8,10 @@ public class Customer implements ICustomer {
     @Override
     public void order(String coffeeName, Menu menu) {
         MenuItem orderedItem = menu.searchMenuItem(coffeeName);
-        System.out.println(orderedItem.getName() + " is ordered");
+        Barista barista = new Barista();
+
+        Coffee madeCoffee = barista.makeCoffee(orderedItem);
+        madeCoffee.printDescription();
     }
 
     public static void main(String[] args) {
@@ -16,12 +19,12 @@ public class Customer implements ICustomer {
 
         ArrayList<MenuItem> items = new ArrayList<MenuItem>();
         items.add(new MenuItem("americano", 10));
-        items.add(new MenuItem("milktea", 5));
-        items.add(new MenuItem("milk", 2));
-        items.add(new MenuItem("water", 1));
+        items.add(new MenuItem("cappuccino", 25));
+        items.add(new MenuItem("milkLatte", 20));
+        items.add(new MenuItem("cold water", 15));
 
         Menu menu = new Menu(items);
 
-        customer.order("milk", menu);
+        customer.order("cappuccino", menu);
     }
 }
