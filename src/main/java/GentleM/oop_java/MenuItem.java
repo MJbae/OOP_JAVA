@@ -1,5 +1,13 @@
 package GentleM.oop_java;
 
-public class MenuItem implements IMenuItem{
+import GentleM.oop_java.Interface.IMenuItem;
 
+public class MenuItem implements IMenuItem {
+    private String name;
+    private int price;
+
+    public MenuItem(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
 }
