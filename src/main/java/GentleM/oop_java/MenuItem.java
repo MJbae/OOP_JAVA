@@ -1,4 +1,5 @@
 package GentleM.oop_java;
 
-public class MenuItem {
+public class MenuItem implements IMenuItem{
+
 }
