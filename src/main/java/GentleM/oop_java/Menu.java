@@ -6,6 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu implements IMenu {
+    public static final String[][] MENU_ITEMS = {{"americano", "10"}, {"cappuccino", "20"}, {"milkLatte", "20"}, {"cold water", "20"}};
+    public static final int MENU_NAME = 0;
+    public static final int MENU_PRICE = 1;
+    public static final int AMERICANO = 0;
+    public static final int CAPUUCCINO = 1;
+    public static final int MILK_LATTE = 2;
+    public static final int COLD_WATER = 3;
+
     private ArrayList<MenuItem> _items;
 
     public Menu(ArrayList<MenuItem> items) {
@@ -14,10 +22,9 @@ public class Menu implements IMenu {
     }
 
     public void addMenu(ArrayList<MenuItem> items) {
-        items.add(new MenuItem("americano", 10));
-        items.add(new MenuItem("cappuccino", 25));
-        items.add(new MenuItem("milkLatte", 20));
-        items.add(new MenuItem("cold water", 15));
+        for (String[] eachMenu : MENU_ITEMS) {
+            items.add(new MenuItem(eachMenu[MENU_NAME], Integer.parseInt(eachMenu[MENU_PRICE])));
+        }
     }
 
     @Override
