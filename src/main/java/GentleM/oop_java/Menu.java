@@ -7,13 +7,16 @@ import java.util.List;
 
 public class Menu {
     private ArrayList<MenuItem> _items = new ArrayList<MenuItem>();
-    MenuItem americano = new MenuItem("americano", 10);
-    MenuItem greenTea = new MenuItem("greenTea", 15);
-    MenuItem cafeMoca = new MenuItem("cafeMoca", 20);
-    MenuItem milk = new MenuItem("milk", 5);
 
-    public void addItems(MenuItem item){
+    public void addItems(MenuItem item) {
         _items.add(item);
     }
 
+    public static void main(String[] args){
+        Menu menu = new Menu();
+        menu.addItems(new MenuItem("americano", 10));
+        menu.addItems(new MenuItem("greenTea", 5));
+        menu.addItems(new MenuItem("milk", 3));
+        menu.addItems(new MenuItem("water", 1));
+    }
 }
