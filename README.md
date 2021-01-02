@@ -44,7 +44,7 @@
 - 메세지를 수신한 객체 내 메세지와 연관된 operation 정의 ex) 손님 객체 내 커피 주문 operation 정의해야 함
 - 협력 설계 과정에서 정의된 operation은 외부에서 접근 가능한 공용 인터페이스임(public 선언)
 - 인터페이스와 구현의 분리: 인터페이스를 먼저 정의한 후, 구현 시도
-## 3. 객체지향적으로 구현하기
+## 3. 구현하기
 - 객체의 내부로직을 구현하면서 인터페이스와 상이한 부분이 있다면 인터페이스도 함께 수정
 ## Reference
 ### 김승영, https://woowabros.github.io/study/2016/07/07/think_object_oriented.html
