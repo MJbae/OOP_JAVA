@@ -13,18 +13,4 @@ public class Customer implements ICustomer {
         Coffee madeCoffee = barista.makeCoffee(orderedItem);
         madeCoffee.printDescription();
     }
-
-    public static void main(String[] args) {
-        Customer customer = new Customer();
-
-        ArrayList<MenuItem> items = new ArrayList<MenuItem>();
-        items.add(new MenuItem("americano", 10));
-        items.add(new MenuItem("cappuccino", 25));
-        items.add(new MenuItem("milkLatte", 20));
-        items.add(new MenuItem("cold water", 15));
-
-        Menu menu = new Menu(items);
-
-        customer.order("cappuccino", menu);
-    }
 }
