@@ -3,12 +3,13 @@ package GentleM.oop_java;
 import GentleM.oop_java.Interface.IMenu;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Menu implements IMenu {
-    public static final String[][] MENU_ITEMS = {{"americano", "10"}, {"cappuccino", "20"}, {"milkLatte", "20"}, {"cold water", "20"}};
-    public static final int MENU_NAME = 0;
-    public static final int MENU_PRICE = 1;
+    public static final String[] MENU_ITEMS = {"americano", "cappuccino", "milkLatte", "cold water"};
+    public static final HashMap<String, Integer> MENU_PRICES = new HashMap<>();
+
     public static final int AMERICANO = 0;
     public static final int CAPUUCCINO = 1;
     public static final int MILK_LATTE = 2;
@@ -17,14 +18,22 @@ public class Menu implements IMenu {
     private ArrayList<MenuItem> _items;
 
     public Menu(ArrayList<MenuItem> items) {
+        addPrice();
         addMenu(items);
         this._items = items;
     }
 
     public void addMenu(ArrayList<MenuItem> items) {
-        for (String[] eachMenu : MENU_ITEMS) {
-            items.add(new MenuItem(eachMenu[MENU_NAME], Integer.parseInt(eachMenu[MENU_PRICE])));
+        for (String eachMenu : MENU_ITEMS) {
+            items.add(new MenuItem(eachMenu, MENU_PRICES.get(eachMenu)));
         }
+    }
+
+    public void addPrice(){
+        MENU_PRICES.put(MENU_ITEMS[AMERICANO], 10);
+        MENU_PRICES.put(MENU_ITEMS[CAPUUCCINO], 20);
+        MENU_PRICES.put(MENU_ITEMS[MILK_LATTE], 15);
+        MENU_PRICES.put(MENU_ITEMS[COLD_WATER], 30);
     }
 
     @Override
