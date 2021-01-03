@@ -10,7 +10,7 @@ public class Prompt {
         ArrayList<MenuItem> items = new ArrayList<MenuItem>();
         Menu menu = new Menu(items);
 
-        customer.order(MENU_ITEMS[MILK_LATTE], menu);
+        customer.order(MENU_ITEMS[AMERICANO], menu);
     }
 
     public static void main(String[] args) {

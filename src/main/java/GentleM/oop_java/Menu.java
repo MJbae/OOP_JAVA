@@ -18,7 +18,7 @@ public class Menu implements IMenu {
     private ArrayList<MenuItem> _items;
 
     public Menu(ArrayList<MenuItem> items) {
-        addPrice();
+        setPrice();
         addMenu(items);
         this._items = items;
     }
@@ -29,7 +29,7 @@ public class Menu implements IMenu {
         }
     }
 
-    public void addPrice(){
+    public void setPrice(){
         MENU_PRICES.put(MENU_ITEMS[AMERICANO], 10);
         MENU_PRICES.put(MENU_ITEMS[CAPUUCCINO], 20);
         MENU_PRICES.put(MENU_ITEMS[MILK_LATTE], 15);
