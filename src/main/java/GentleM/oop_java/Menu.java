@@ -37,9 +37,9 @@ public class Menu implements IMenu {
     }
 
     @Override
-    public MenuItem searchMenuItem(String coffeeName) {
+    public MenuItem searchMenuItem(String itemName) {
         for (MenuItem eachItem : _items) {
-            if (eachItem.getName().equals(coffeeName)) return eachItem;
+            if (eachItem.getName().equals(itemName)) return eachItem;
         }
         return null;
     }

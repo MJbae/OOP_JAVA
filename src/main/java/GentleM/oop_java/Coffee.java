@@ -1,5 +1,7 @@
 package GentleM.oop_java;
 
+import static GentleM.oop_java.Menu.*;
+
 public class Coffee {
     private String _name;
     private int _price;
@@ -13,8 +15,8 @@ public class Coffee {
     }
 
     public void addFlavor(String name) {
-        if (name.equals("americano")) _flavor = "Fragrant";
-        else if (name.equals("cappuccino")) _flavor = "Savory";
+        if (name.equals(MENU_ITEMS[AMERICANO])) _flavor = "Fragrant";
+        else if (name.equals(MENU_ITEMS[CAPUUCCINO])) _flavor = "Savory";
         else _flavor = "soso";
     }
 

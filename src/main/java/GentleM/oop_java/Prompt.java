@@ -2,11 +2,7 @@ package GentleM.oop_java;
 
 import java.util.ArrayList;
 
-import static GentleM.oop_java.Menu.MENU_ITEMS;
-import static GentleM.oop_java.Menu.AMERICANO;
-import static GentleM.oop_java.Menu.CAPUUCCINO;
-import static GentleM.oop_java.Menu.MILK_LATTE;
-import static GentleM.oop_java.Menu.COLD_WATER;
+import static GentleM.oop_java.Menu.*;
 
 public class Prompt {
     private void runPrompt() {
@@ -16,8 +12,6 @@ public class Prompt {
 
         customer.order(MENU_ITEMS[MILK_LATTE], menu);
     }
-
-
 
     public static void main(String[] args) {
         Prompt prompt = new Prompt();
